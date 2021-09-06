@@ -2,9 +2,9 @@
 
 ## Exit On Error
 
-Recommend adding `set -euo pipefail` to the beginning of all Bash script files.
+Recommend adding `set -euo pipefail` at the beginning of all Bash script files.
 
-The `-e` and `-o pipefail` causes the script to exit with a non-zero return
+The `-e` + `-o pipefail` combo causes the script to exit with a non-zero return
 code as soon as any child command returns a non-zero return code.
 
 Note `-o pipefail` is really a compliment to `-e`, as it also catches failures
